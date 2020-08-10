@@ -26,17 +26,15 @@
                 </a>
                 <img src="images/logo.svg" alt="Proffy">
             </div>
-      
-
+    
             <div class="header-content">
                 <strong>Que incrível que você quer dar aulas</strong>
                 <p>Primeiro passo, é preencher este formulário de inscrição.</p>
             <divr>
  
-        </header>
-        
+        </header>        
      <main>
-            <form action="" id="create-class">
+            <form action="/save-classes" id="create-class" method="POST">
                 <fieldset>
 
                     <legend>Seus dados</legend>
@@ -69,22 +67,17 @@
                         <label for="subject">Matéria</label>
                         <select name="subject" id="subject" required>
                             <option value="">Selecione uma opção</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciências</option>
-                            <option value="4">Educação física</option>
-                            <option value="5">Física</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">História</option>
-                            <option value="8">Matemática</option>
-                            <option value="9">Português</option>
-                            <option value="10">Química</option>
+                             {%for subject in subjects %}
+                            <option value="{{loop.index}}">
+                                {{subject}}
+                            </option>
+                            {%endfor%}
                         </select>
 
                         <div class="input-block">
-                            <label for="const">Custo da sua hora/aula</label>
+                            <label for="cost">Custo da sua hora/aula</label>
                             <small>(R$)</small>
-                            <input type="cont" id="cont" type="number" required>
+                            <input name="cost" type="cont" id="cost" type="number" required>
                         </div>
                     </div>
                 </fieldset>
@@ -97,14 +90,12 @@
                     <div class="schedule-item">   
                         <div class="select-block">
                             <label for="weekday">Dia da semana</label>
-                            <select name="weekday[]" required>
-                                <option value="0">Domingo</option>
-                                <option value="1">Segunda-feira</option>
-                                <option value="2">Terça-feira</option>
-                                <option value="3">Quarta-feira</option>
-                                <option value="4">Quinta-feira</option>
-                                <option value="5">Sexta-feira</option>
-                                <option value="6">Sábado</option>
+                            <select name="weekday[]" id="weekday" required>
+                                {%for weekday in weekdays %}
+                                    <option value="{{loop.index0}}">
+                                        {{weekday}}
+                                    </option>
+                                {%endfor%}
                             </select>
                         </div>
 
@@ -112,14 +103,16 @@
                             <label for="time_from">Das</label>
                             <input type="time" name="time_from[]" required>
                         </div>
+                        
 
                         <div class="input-block">
-                            <label for="time_from">Até</label>
-                            <input type="time" name="time_from[]" required>
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]" required>
                         </div>
                     </div>
 
                 </fieldset>
+            </form>
                     <footer>
                         <p>
                             <img src="/images//icons/warning.svg" alt="Aviso importante">
@@ -127,7 +120,6 @@
                         </p>
                         <button type="submit" form="create-class">Salvar cadastro</button>
                     </footer>
-             </form>
         </main>
   </div>
 </body>
