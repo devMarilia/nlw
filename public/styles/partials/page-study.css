@@ -121,7 +121,7 @@
 
  /* botão contato whatsapp */
 
- .teacher-item footer button {
+ .teacher-item footer .button {
     width: 20rem;
     height: 5.6rem;
     background: var(--color-secondary);
@@ -141,8 +141,14 @@
     margin-left: 1.6rem;
  }
 /* transition from background */
- .teacher-item footer button:hover {
+ .teacher-item footer .button:hover {
      background: var(--color-secondary-dark);
+ }
+
+ #page-study main .no-results {
+     max-width: 30rem;
+     margin: 12rem auto;
+     text-align: center;
  }
 /* Fique com essa largura maxima quando você comessar */
     @media (min-width:700px){

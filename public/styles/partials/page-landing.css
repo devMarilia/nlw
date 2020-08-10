@@ -67,12 +67,12 @@
     
 }
 
-.buttons-container a.give-classes {
+.buttons-container a.give-class {
     background: var(--color-secondary);
     margin-right: 0;
 } 
 /* efeito do mouse */
-.buttons-container a.give-classes:hover{
+.buttons-container a.give-class:hover{
     background: var(--color-secondary-dark); /*muda a cor*/
     
 }
@@ -88,9 +88,12 @@
     margin-left: 0.8rem;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 1100px) {
     :rot {
         font-size: 40px;
+    }
+    .hero-image {
+        height: 45rem;
     }
 }
 
