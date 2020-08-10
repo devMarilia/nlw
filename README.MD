@@ -8,9 +8,9 @@
 
 ## Sobre
 
-<p>O <b>Proffy<b> é uma aplicação feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
+<p>O Proffy é uma aplicação feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
 
-Este projeto foi idealizado pensando no <b>6 de agosto<b>, onde se comemora o Dia Nacional dos Profissionais da Educação.</p>
+Este projeto foi idealizado pensando no 6 de agosto, onde se comemora o Dia Nacional dos Profissionais da Educação.</p>
 
 <i>Essa aplicação foi realizada durante a Next<a href="https://expressjs.com/">  Next Lavel Wee</a>, projeto da Rocketseat.</i> 
 
